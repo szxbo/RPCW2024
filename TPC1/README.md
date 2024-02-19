@@ -32,8 +32,6 @@ O ficheiro JSON tem a seguinte estrutura:
 - Planta: Contém a maioria das informações sobre as plantas.
 - Rua: Contém informações específicas sobre a rua (Rua, Código de Rua, Local e Freguesia).
 
-Para os atributos destas classes 
-
 # Exemplo de Código TTL Gerado
 ```turtle
 :p_20615557 rdf:type owl:NamedIndividual ,
