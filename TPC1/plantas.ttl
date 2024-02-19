@@ -1,0 +1,207 @@
+@prefix : <http://rpcw.di.uminho.pt/2024/plantas/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rpcw.di.uminho.pt/2024/plantas/> .
+
+<http://rpcw.di.uminho.pt/2024/plantas> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/plantas#temPlanta
+:temPlanta rdf:type owl:ObjectProperty ;
+           owl:inverseOf :temRua ;
+           <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#temRua
+:temRua rdf:type owl:ObjectProperty ;
+        rdfs:domain :Planta ;
+        rdfs:range :Rua ;
+        <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/plantas#caldeira
+:caldeira rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Planta ;
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#codigo_rua
+:codigo_rua rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Rua ;
+            rdfs:range xsd:int ;
+            <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#data_atualizacao
+:data_atualizacao rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Planta ;
+                  rdfs:range xsd:string ;
+                  <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#data_plantacao
+:data_plantacao rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Planta ;
+                rdfs:range xsd:string ;
+                <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#especie
+:especie rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Planta ;
+         rdfs:range xsd:string ;
+         <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#estado
+:estado rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Planta ;
+        rdfs:range xsd:string ;
+        <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#freguesia
+:freguesia rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Rua ;
+           rdfs:range xsd:string ;
+           <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#gestor
+:gestor rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Planta ;
+        rdfs:range xsd:string ;
+        <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Planta ;
+    rdfs:range xsd:int ;
+    <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#implantacao
+:implantacao rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Planta ;
+             rdfs:range xsd:string ;
+             <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#intervencoes
+:intervencoes rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Planta ;
+              rdfs:range xsd:string ;
+              <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#local
+:local rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Rua ;
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#nome_cientifico
+:nome_cientifico rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Planta ;
+                 rdfs:range xsd:string ;
+                 <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#nome_rua
+:nome_rua rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Rua ;
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#numero
+:numero rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Planta ;
+        rdfs:range xsd:int ;
+        <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#origem
+:origem rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Planta ;
+        rdfs:range xsd:string ;
+        <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#tutor
+:tutor rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Planta ;
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/plantas#Planta
+:Planta rdf:type owl:Class ;
+        <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#Rua
+:Rua rdf:type owl:Class ;
+     <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/plantas#p_20615557
+:p_20615557 rdf:type owl:NamedIndividual ,
+                     :Planta ;
+            :temRua :r_1685467 ;
+            :caldeira "Sim" ;
+            :data_atualizacao "23/07/2021 19:50:54" ;
+            :data_plantacao "" ;
+            :especie "pinheiro manso" ;
+            :estado "Adulto" ;
+            :gestor "DGEV" ;
+            :id "20615557"^^xsd:int ;
+            :implantacao "Arruamento" ;
+            :intervencoes "6"^^xsd:int ;
+            :nome_cientifico "Pinus pinea" ;
+            :numero "3"^^xsd:int ;
+            :origem "" ;
+            :tutor "Sim" ;
+            <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  http://rpcw.di.uminho.pt/2024/plantas#r_1685467
+:r_1685467 rdf:type owl:NamedIndividual ;
+           :temPlanta :p_20615557 ;
+           :codigo_rua "1685467"^^xsd:int ;
+           :freguesia "Alcabideche" ;
+           :local "Zambujeiro" ;
+           :nome_rua "Rua Júlio Dinis" ;
+           <http://purl.org/dc/elements/1.1/creator> "robert" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
