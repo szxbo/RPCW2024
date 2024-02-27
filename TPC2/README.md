@@ -66,4 +66,4 @@ De seguida, foi desenvolvido uma script em Python que percorre o dataset e popul
 
 Finalmente, o ficheiro gerado pela script foi importado no GraphDB podendo observar a seguinte estrutura de dados.
 
-![graphbd](./graphbd.png)
+![graphbd](./graphdb.png)
