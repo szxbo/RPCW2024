@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8" />
+        <title>Tabela Periódica - {{ data[0].symb.value }}</title>
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='/styles/w3.css') }}">
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-purple">
+                <h1><a href="/">Tabela Periódica</a> - {{ elem_name }} {{ data[0].an.value }}</h1>
+            </header>
+
+            <div class="w3-container">
+                <table class="w3-table-all">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Simbolo</th>
+                        <th>Número atómico</th>
+                        <th>Peso atómico</th>
+                        <th>Cor</th>
+                        <th>Número do Grupo</th>
+                        <th>Nome do Grupo</th>
+                        <th>Período</th>
+
+                    </tr>
+                    {% for entry in data %}
+                    <tr>
+                        <td>{{ elem_name }}</td>
+                        <td>{{ entry.symb.value }}</td>
+                        <td>{{ entry.an.value }} </td>
+                        <td>{{ entry.aw.value }} </td>
+                        <td>{{ entry.color.value }} </td>
+                        {% if entry.get('group_num') %}
+                            <td><a href="/grupo/{{ entry.group_num.value }}">{{ entry.group_num.value }}</a></td>
+                            {%else%}
+                                <td> -- </td>
+                        {%endif%}
+                        {% if entry.get('group_name') %}
+                            <td><a href="/grupo/{{ entry.group_name.value }}">{{ entry.group_name.value }}</a></td>
+                            {%else%}
+                                <td> -- </td>
+                        {%endif%}
+                        <td>{{ entry.period_num.value }} </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            <footer class="w3-container w3-purple">
+                <h5>Gerado por RPCW2024 em {{ time }}</h5>
+            </footer>
+        </div>
+    </body>
+</html>
