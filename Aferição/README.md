@@ -73,8 +73,7 @@ select ?id ?nome ?curso ?nota_proj where {
 ORDER BY ?nome
 ```
 
-### Qual a distribuição dos alunos pelas notas do projeto? (lista com: nota e número de alunos que
-obtiveram essa nota)
+### Qual a distribuição dos alunos pelas notas do projeto? (lista com: nota e número de alunos que obtiveram essa nota)
 ```sql
 PREFIX a: <http://rpcw.di.uminho.pt/2024/avaliacao/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -126,4 +125,5 @@ ORDER BY DESC (?total)
 Foi criada uma API REST em Flask que permite a consulta de dados da ontologia através de queries SPARQL. A API permite a execução de queries SPARQL e a visualização dos resultados em formato JSON.
 
 ### Endpoints
-![Endpoints](!(api.png))
+![Endpoints](api.png)
+
