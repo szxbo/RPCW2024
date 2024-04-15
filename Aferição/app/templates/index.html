@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8" />
+        <title>API - Alunos</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/styles/w3.css') }}">
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-black">
+                <h1>API - Alunos</h1>
+            </header>
+
+            <div class="w3-container">
+                <p>Lista de API calls disponíveis:</p>
+                <ul class="w3-ul">
+                    <li>GET /api/alunos - Devolve a lista dos alunos, ordenada alfabeticamente por nome, com os
+                        campos: idAluno, nome e curso;</li>
+                    <li>GET /api/alunos/:id - Devolve a informação completa de um aluno (nesta rota, considere
+                        para id o campo idAluno);</li>
+                    <li>GET /api/alunos?curso=X - Devolve apenas uma lista, ordenada alfabeticamente por
+                        nome, com os alunos do curso X;</li>
+                    <li>GET /api/alunos/tpc - Devolve a lista de alunos (com idAluno, nome e curso), ordenada
+                        alfabeticamente por nome, e um quarto campo correspondente ao número de TPC realizados;</li>
+                    <li>GET /api/alunos?groupBy=curso - Devolve a lista de cursos, ordenada alfabeticamente,
+                        e para cada um indica quantos alunos estão registados;</li>
+                    <li>GET /api/alunos?groupBy=projeto - Devolve uma lista de notas registadas no projeto e
+                        para cada um indica o total de alunos que a obtiveram;</li>
+                    <li>GET /api/alunos?groupBy=recurso - Devolve a lista de alunos, ordenada
+                        alfabeticamente por nome, que realizaram o exame de recurso: idAluno, nome, curso, recurso;</li>
+                    <li>GET /api/alunos/avaliados - Devolve uma lista de alunos, ordenada alfabeticamente por
+                        nome, com o resultado final: idAluno, nome, curso e notaFinal, em que notaFinal poderá ser
+                        "R" ou um valor entre 10 e 20.</li>
+
+                </ul>
+            </div>
+
+            <footer class="w3-container w3-black">
+                <h5>Gerado por RPCW2024 em {{ data.data }}</h5>
+            </footer>
+        </div>
+    </body>
+</html>

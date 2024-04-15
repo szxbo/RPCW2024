@@ -1,0 +1,118 @@
+@prefix : <http://rpcw.di.uminho.pt/2024/avaliacao/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rpcw.di.uminho.pt/2024/avaliacao/> .
+
+<http://rpcw.di.uminho.pt/2024/avaliacao> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#temExame
+:temExame rdf:type owl:ObjectProperty ;
+          rdfs:domain :Aluno ;
+          rdfs:range :Exame .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#temTPC
+:temTPC rdf:type owl:ObjectProperty ;
+        rdfs:domain :Aluno ;
+        rdfs:range :TPC .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#curso
+:curso rdf:type owl:DatatypeProperty .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#id_aluno
+:id_aluno rdf:type owl:DatatypeProperty .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#nota
+:nota rdf:type owl:DatatypeProperty .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#nota_projeto
+:nota_projeto rdf:type owl:DatatypeProperty .
+
+
+############################################### ##################
+#    Classes
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#Aluno
+:Aluno rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#Exame
+:Exame rdf:type owl:Class .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#ExameEspecial
+:ExameEspecial rdf:type owl:Class ;
+               rdfs:subClassOf :Exame .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#ExameNormal
+:ExameNormal rdf:type owl:Class ;
+             rdfs:subClassOf :Exame .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#ExameRecurso
+:ExameRecurso rdf:type owl:Class ;
+              rdfs:subClassOf :Exame .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#TPC
+:TPC rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#Aluno_A91509
+:Aluno_A91509 rdf:type owl:Aluno ;
+              :temExame :Exame_E_A91509 ,
+                        :Exame_N_A91509 ,
+                        :Exame_R_A91509 ;
+              :temTPC :TPC_7_A91509 ;
+              :curso "MML" ;
+              :id_aluno "A91509" ;
+              :nome "Momtahana Caldinhas" ;
+              :nota_projeto 14 .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#Exame_E_A91509
+:Exame_E_A91509 rdf:type owl:Exame ;
+                :nota 17 .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#Exame_N_A91509
+:Exame_N_A91509 rdf:type owl:Exame ;
+                :nota 5 .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#Exame_R_A91509
+:Exame_R_A91509 rdf:type owl:Exame ;
+                :nota 18 .
+
+
+###  http://rpcw.di.uminho.pt/2024/avaliacao#TPC_7_A91509
+:TPC_7_A91509 rdf:type owl:TPC ;
+              :nome "tpc7" ;
+              :nota 0.77 .
+
+
