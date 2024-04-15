@@ -1,0 +1,3604 @@
+@prefix : <http://rpcw.di.uminho.pt/2024/familia/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rpcw.di.uminho.pt/2024/familia/> .
+
+<http://rpcw.di.uminho.pt/2024/familia> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/familia/temMae
+:temMae rdf:type owl:ObjectProperty ;
+        rdfs:domain :Pessoa ;
+        rdfs:range :Pessoa .
+
+
+###  http://rpcw.di.uminho.pt/2024/familia/temPai
+:temPai rdf:type owl:ObjectProperty ;
+        rdfs:domain :Pessoa ;
+        rdfs:range :Pessoa .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/familia/nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rpcw.di.uminho.pt/2024/familia/Pessoa
+:Pessoa rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+###  http://rpcw.di.uminho.pt/2024/familia#I1
+    :I1 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mizraim" .
+    :I1 :temPai :I34 .
+    :I1 :temMae :I7 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I2
+    :I2 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Phut" .
+    :I2 :temPai :I34 .
+    :I2 :temMae :I7 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I3
+    :I3 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Cush" .
+    :I3 :temPai :I34 .
+    :I3 :temMae :I7 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I4
+    :I4 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sabtah" .
+    :I4 :temPai :I3 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I5
+    :I5 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Raamah" .
+    :I5 :temPai :I3 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I6
+    :I6 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Canaan" .
+    :I6 :temPai :I34 .
+    :I6 :temMae :I7 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I7
+    :I7 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Egyptus" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I8
+    :I8 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Reumah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I9
+    :I9 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Leah" .
+    :I9 :temPai :I54 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I10
+    :I10 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jacob" .
+    :I10 :temPai :I11 .
+    :I10 :temMae :I12 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I11
+    :I11 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Isaac" .
+    :I11 :temPai :I13 .
+    :I11 :temMae :I128 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I12
+    :I12 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Rebekah" .
+    :I12 :temPai :I135 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I13
+    :I13 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abraham (Abram)" .
+    :I13 :temPai :I14 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I14
+    :I14 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Terah" .
+    :I14 :temPai :I15 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I15
+    :I15 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nahor" .
+    :I15 :temPai :I16 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I16
+    :I16 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Serug" .
+    :I16 :temPai :I17 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I17
+    :I17 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Reu" .
+    :I17 :temPai :I18 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I18
+    :I18 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Peleg" .
+    :I18 :temPai :I19 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I19
+    :I19 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eber" .
+    :I19 :temPai :I20 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I20
+    :I20 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Salah" .
+    :I20 :temPai :I21 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I21
+    :I21 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Arphaxad" .
+    :I21 :temPai :I22 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I22
+    :I22 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shem" .
+    :I22 :temPai :I23 .
+    :I22 :temMae :I35 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I23
+    :I23 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Noah" .
+    :I23 :temPai :I24 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I24
+    :I24 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lamech" .
+    :I24 :temPai :I25 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I25
+    :I25 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Methuselah" .
+    :I25 :temPai :I26 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I26
+    :I26 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Enoch" .
+    :I26 :temPai :I27 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I27
+    :I27 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jared" .
+    :I27 :temPai :I28 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I28
+    :I28 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mahalaleel" .
+    :I28 :temPai :I29 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I29
+    :I29 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Cainan" .
+    :I29 :temPai :I30 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I30
+    :I30 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Enos" .
+    :I30 :temPai :I31 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I31
+    :I31 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Seth" .
+    :I31 :temPai :I32 .
+    :I31 :temMae :I176 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I32
+    :I32 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Adam" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I33
+    :I33 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Japheth" .
+    :I33 :temPai :I23 .
+    :I33 :temMae :I35 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I34
+    :I34 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ham" .
+    :I34 :temPai :I23 .
+    :I34 :temMae :I35 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I35
+    :I35 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Titea" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I36
+    :I36 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tait" .
+    :I36 :temPai :I37 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I37
+    :I37 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Oghaman" .
+    :I37 :temPai :I38 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I38
+    :I38 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Beouman" .
+    :I38 :temPai :I39 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I39
+    :I39 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Heber Scut (Scott)" .
+    :I39 :temPai :I40 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I40
+    :I40 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sruth" .
+    :I40 :temPai :I41 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I41
+    :I41 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Asruth (Easruth)" .
+    :I41 :temPai :I42 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I42
+    :I42 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gaodhal Glas" .
+    :I42 :temPai :I43 .
+    :I42 :temMae :I47 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I43
+    :I43 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Niul" .
+    :I43 :temPai :I44 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I44
+    :I44 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Phoeniusa Farsaidh King" .
+    :I44 :temPai :I45 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I45
+    :I45 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Boath" .
+    :I45 :temPai :I46 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I46
+    :I46 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Magog" .
+    :I46 :temPai :I33 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I47
+    :I47 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Scota" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I48
+    :I48 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Huz" .
+    :I48 :temPai :I178 .
+    :I48 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I49
+    :I49 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hazo" .
+    :I49 :temPai :I178 .
+    :I49 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I50
+    :I50 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Chesed" .
+    :I50 :temPai :I178 .
+    :I50 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I51
+    :I51 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Adah" .
+    :I51 :temPai :I491 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I52
+    :I52 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Buz" .
+    :I52 :temPai :I178 .
+    :I52 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I53
+    :I53 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nenall" .
+    :I53 :temPai :I44 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I54
+    :I54 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Laban" .
+    :I54 :temPai :I135 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I55
+    :I55 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abel" .
+    :I55 :temPai :I32 .
+    :I55 :temMae :I176 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I56
+    :I56 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zilah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I57
+    :I57 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Enoch" .
+    :I57 :temPai :I177 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I58
+    :I58 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Irad" .
+    :I58 :temPai :I57 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I59
+    :I59 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mahujael" .
+    :I59 :temPai :I58 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I60
+    :I60 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Methusael" .
+    :I60 :temPai :I59 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I61
+    :I61 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lamech" .
+    :I61 :temPai :I60 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I62
+    :I62 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Trbal-Cain" .
+    :I62 :temPai :I61 .
+    :I62 :temMae :I56 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I63
+    :I63 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Adah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I64
+    :I64 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Naamah" .
+    :I64 :temPai :I61 .
+    :I64 :temMae :I56 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I65
+    :I65 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jabal" .
+    :I65 :temPai :I61 .
+    :I65 :temMae :I63 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I66
+    :I66 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Meshech" .
+    :I66 :temPai :I33 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I67
+    :I67 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Madai" .
+    :I67 :temPai :I33 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I68
+    :I68 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tubul" .
+    :I68 :temPai :I33 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I69
+    :I69 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gomor" .
+    :I69 :temPai :I33 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I70
+    :I70 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tiras" .
+    :I70 :temPai :I33 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I71
+    :I71 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Javan" .
+    :I71 :temPai :I33 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I72
+    :I72 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ashkeraz" .
+    :I72 :temPai :I69 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I73
+    :I73 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Riphath" .
+    :I73 :temPai :I69 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I74
+    :I74 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Togarmar" .
+    :I74 :temPai :I69 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I75
+    :I75 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tarshish" .
+    :I75 :temPai :I71 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I76
+    :I76 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elisaah" .
+    :I76 :temPai :I71 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I77
+    :I77 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kittim" .
+    :I77 :temPai :I71 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I78
+    :I78 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dodanim" .
+    :I78 :temPai :I71 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I79
+    :I79 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Havilah" .
+    :I79 :temPai :I3 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I80
+    :I80 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sabtecha" .
+    :I80 :temPai :I3 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I81
+    :I81 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Seba" .
+    :I81 :temPai :I3 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I82
+    :I82 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nimrod" .
+    :I82 :temPai :I3 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I83
+    :I83 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sheba" .
+    :I83 :temPai :I5 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I84
+    :I84 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dedan" .
+    :I84 :temPai :I5 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I85
+    :I85 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sidon" .
+    :I85 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I86
+    :I86 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Heth" .
+    :I86 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I87
+    :I87 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jebusite" .
+    :I87 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I88
+    :I88 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amorite" .
+    :I88 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I89
+    :I89 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Girgassite" .
+    :I89 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I90
+    :I90 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hivite" .
+    :I90 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I91
+    :I91 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Arkite" .
+    :I91 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I92
+    :I92 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sirite" .
+    :I92 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I93
+    :I93 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Arvadite" .
+    :I93 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I94
+    :I94 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zemarite" .
+    :I94 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I95
+    :I95 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hamathite" .
+    :I95 :temPai :I6 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I96
+    :I96 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ludim" .
+    :I96 :temPai :I1 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I97
+    :I97 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Anamim" .
+    :I97 :temPai :I1 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I98
+    :I98 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lehabim" .
+    :I98 :temPai :I1 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I99
+    :I99 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nephtuihim" .
+    :I99 :temPai :I1 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I100
+    :I100 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Pethusim" .
+    :I100 :temPai :I1 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I101
+    :I101 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Caphtorim" .
+    :I101 :temPai :I1 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I102
+    :I102 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Casluhim" .
+    :I102 :temPai :I1 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I103
+    :I103 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Philstem" .
+    :I103 :temPai :I102 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I104
+    :I104 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aram" .
+    :I104 :temPai :I22 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I105
+    :I105 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Asshur" .
+    :I105 :temPai :I22 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I106
+    :I106 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lud" .
+    :I106 :temPai :I22 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I107
+    :I107 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elam" .
+    :I107 :temPai :I22 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I108
+    :I108 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hul" .
+    :I108 :temPai :I104 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I109
+    :I109 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mash" .
+    :I109 :temPai :I104 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I110
+    :I110 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Uz" .
+    :I110 :temPai :I104 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I111
+    :I111 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gether" .
+    :I111 :temPai :I104 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I112
+    :I112 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jokan" .
+    :I112 :temPai :I19 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I113
+    :I113 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Almodad" .
+    :I113 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I114
+    :I114 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sheleph" .
+    :I114 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I115
+    :I115 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hazarmaveth" .
+    :I115 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I116
+    :I116 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jerah" .
+    :I116 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I117
+    :I117 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hadoram" .
+    :I117 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I118
+    :I118 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Uzal" .
+    :I118 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I119
+    :I119 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Diklah" .
+    :I119 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I120
+    :I120 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Obal" .
+    :I120 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I121
+    :I121 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abimael" .
+    :I121 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I122
+    :I122 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sheba" .
+    :I122 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I123
+    :I123 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ophir" .
+    :I123 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I124
+    :I124 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Havilah" .
+    :I124 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I125
+    :I125 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jobab" .
+    :I125 :temPai :I112 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I126
+    :I126 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Haran" .
+    :I126 :temPai :I14 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I127
+    :I127 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Milcah" .
+    :I127 :temPai :I126 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I128
+    :I128 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sarai [Sarah]" .
+    :I128 :temPai :I126 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I129
+    :I129 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lot" .
+    :I129 :temPai :I126 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I130
+    :I130 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Iscah" .
+    :I130 :temPai :I126 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I131
+    :I131 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tebah" .
+    :I131 :temPai :I178 .
+    :I131 :temMae :I8 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I132
+    :I132 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gaham" .
+    :I132 :temPai :I178 .
+    :I132 :temMae :I8 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I133
+    :I133 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Thahash" .
+    :I133 :temPai :I178 .
+    :I133 :temMae :I8 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I134
+    :I134 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Maachah" .
+    :I134 :temPai :I178 .
+    :I134 :temMae :I8 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I135
+    :I135 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bethuel" .
+    :I135 :temPai :I178 .
+    :I135 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I136
+    :I136 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Moab" .
+    :I136 :temPai :I129 .
+    :I136 :temMae :I179 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I137
+    :I137 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Benammi" .
+    :I137 :temPai :I129 .
+    :I137 :temMae :I180 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I138
+    :I138 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Pildesh" .
+    :I138 :temPai :I178 .
+    :I138 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I139
+    :I139 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jidlaph" .
+    :I139 :temPai :I178 .
+    :I139 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I140
+    :I140 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kemuel" .
+    :I140 :temPai :I178 .
+    :I140 :temMae :I127 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I141
+    :I141 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aram" .
+    :I141 :temPai :I140 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I142
+    :I142 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Rachal" .
+    :I142 :temPai :I54 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I143
+    :I143 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bilhah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I144
+    :I144 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zalpah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I145
+    :I145 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Esau" .
+    :I145 :temPai :I11 .
+    :I145 :temMae :I12 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I146
+    :I146 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bashemath" .
+    :I146 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I147
+    :I147 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nahath" .
+    :I147 :temPai :I182 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I148
+    :I148 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Adbeel" .
+    :I148 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I149
+    :I149 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mibsam" .
+    :I149 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I150
+    :I150 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nephish" .
+    :I150 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I151
+    :I151 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mishma" .
+    :I151 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I152
+    :I152 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kedemah" .
+    :I152 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I153
+    :I153 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dumah" .
+    :I153 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I154
+    :I154 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tema" .
+    :I154 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I155
+    :I155 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jetur" .
+    :I155 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I156
+    :I156 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kendar" .
+    :I156 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I157
+    :I157 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Massa" .
+    :I157 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I158
+    :I158 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nebajoth" .
+    :I158 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I159
+    :I159 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hadar" .
+    :I159 :temPai :I166 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I160
+    :I160 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ephah" .
+    :I160 :temPai :I170 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I161
+    :I161 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Epher" .
+    :I161 :temPai :I170 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I162
+    :I162 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hanoch" .
+    :I162 :temPai :I170 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I163
+    :I163 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abida" .
+    :I163 :temPai :I170 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I164
+    :I164 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eldaah" .
+    :I164 :temPai :I170 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I165
+    :I165 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hagar" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I166
+    :I166 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ishmael" .
+    :I166 :temPai :I13 .
+    :I166 :temMae :I165 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I167
+    :I167 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dedan" .
+    :I167 :temPai :I175 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I168
+    :I168 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shuah" .
+    :I168 :temPai :I13 .
+    :I168 :temMae :I173 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I169
+    :I169 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sheba" .
+    :I169 :temPai :I175 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I170
+    :I170 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Madan" .
+    :I170 :temPai :I13 .
+    :I170 :temMae :I173 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I171
+    :I171 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ishbak" .
+    :I171 :temPai :I13 .
+    :I171 :temMae :I173 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I172
+    :I172 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Judith" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I173
+    :I173 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Keturah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I174
+    :I174 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zemran" .
+    :I174 :temPai :I13 .
+    :I174 :temMae :I173 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I175
+    :I175 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jokshon" .
+    :I175 :temPai :I13 .
+    :I175 :temMae :I173 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I176
+    :I176 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eve" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I177
+    :I177 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Cain" .
+    :I177 :temPai :I32 .
+    :I177 :temMae :I176 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I178
+    :I178 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nahor" .
+    :I178 :temPai :I14 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I179
+    :I179 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Daughter of Lot (Number I)" .
+    :I179 :temPai :I129 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I180
+    :I180 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Daughter of Lot (Number II)" .
+    :I180 :temPai :I129 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I181
+    :I181 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jubal" .
+    :I181 :temPai :I61 .
+    :I181 :temMae :I63 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I182
+    :I182 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Reuel (Jethro)" .
+    :I182 :temPai :I145 .
+    :I182 :temMae :I146 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I183
+    :I183 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aholitamah" .
+    :I183 :temPai :I187 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I184
+    :I184 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aeush" .
+    :I184 :temPai :I145 .
+    :I184 :temMae :I183 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I185
+    :I185 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jaalam" .
+    :I185 :temPai :I145 .
+    :I185 :temMae :I183 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I186
+    :I186 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Korah" .
+    :I186 :temPai :I145 .
+    :I186 :temMae :I183 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I187
+    :I187 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Anah" .
+    :I187 :temPai :I193 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I188
+    :I188 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dishon" .
+    :I188 :temPai :I187 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I189
+    :I189 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hemden" .
+    :I189 :temPai :I188 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I190
+    :I190 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eshben" .
+    :I190 :temPai :I188 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I191
+    :I191 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ithran" .
+    :I191 :temPai :I188 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I192
+    :I192 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Cheran" .
+    :I192 :temPai :I188 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I193
+    :I193 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zibeon" .
+    :I193 :temPai :I195 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I194
+    :I194 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ajah" .
+    :I194 :temPai :I193 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I195
+    :I195 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Seir" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I196
+    :I196 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Timna" .
+    :I196 :temPai :I195 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I197
+    :I197 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lotan" .
+    :I197 :temPai :I195 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I198
+    :I198 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Stobal" .
+    :I198 :temPai :I195 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I199
+    :I199 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ezer" .
+    :I199 :temPai :I195 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I200
+    :I200 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dishan" .
+    :I200 :temPai :I195 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I201
+    :I201 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Uz" .
+    :I201 :temPai :I200 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I202
+    :I202 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aran" .
+    :I202 :temPai :I200 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I203
+    :I203 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bilhan" .
+    :I203 :temPai :I199 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I204
+    :I204 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zaavan" .
+    :I204 :temPai :I199 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I205
+    :I205 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Akan" .
+    :I205 :temPai :I199 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I206
+    :I206 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Alvan" .
+    :I206 :temPai :I198 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I207
+    :I207 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Manahath" .
+    :I207 :temPai :I198 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I208
+    :I208 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ebal" .
+    :I208 :temPai :I198 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I209
+    :I209 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shepho" .
+    :I209 :temPai :I198 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I210
+    :I210 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Onam" .
+    :I210 :temPai :I198 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I211
+    :I211 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hori" .
+    :I211 :temPai :I197 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I212
+    :I212 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hemam" .
+    :I212 :temPai :I197 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I213
+    :I213 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zarah" .
+    :I213 :temPai :I182 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I214
+    :I214 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shanmah" .
+    :I214 :temPai :I182 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I215
+    :I215 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zipporah" .
+    :I215 :temPai :I182 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I216
+    :I216 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mizzah" .
+    :I216 :temPai :I182 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I217
+    :I217 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Follian (Falach)" .
+    :I217 :temPai :I218 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I218
+    :I218 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eithriall" .
+    :I218 :temPai :I219 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I219
+    :I219 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Irial Faidh King" .
+    :I219 :temPai :I224 .
+    :I219 :temMae :I220 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I220
+    :I220 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tamar Tephi Princess" .
+    :I220 :temPai :I221 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I221
+    :I221 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mattaniah (Zedekiah)" .
+    :I221 :temPai :I222 .
+    :I221 :temMae :I223 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I222
+    :I222 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Josiah" .
+    :I222 :temPai :I423 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I223
+    :I223 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hammutal" .
+    :I223 :temPai :I225 .
+    :I223 :temMae :I281 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I224
+    :I224 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eochaid I (Heremon)" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I225
+    :I225 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jermiah" .
+    :I225 :temPai :I226 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I226
+    :I226 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hilkiah" .
+    :I226 :temPai :I235 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I227
+    :I227 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gemariah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I228
+    :I228 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elasah" .
+    :I228 :temPai :I229 .
+    :I228 :temMae :I227 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I229
+    :I229 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shaphan" .
+    :I229 :temPai :I226 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I230
+    :I230 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ahitub" .
+    :I230 :temPai :I231 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I231
+    :I231 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amariah" .
+    :I231 :temPai :I237 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I232
+    :I232 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Holdiah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I233
+    :I233 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ezra" .
+    :I233 :temPai :I254 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I234
+    :I234 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hanameel" .
+    :I234 :temPai :I235 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I235
+    :I235 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shallum" .
+    :I235 :temPai :I236 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I236
+    :I236 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zadok" .
+    :I236 :temPai :I230 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I237
+    :I237 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Azariah" .
+    :I237 :temPai :I238 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I238
+    :I238 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Meraioth" .
+    :I238 :temPai :I239 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I239
+    :I239 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zerahiah" .
+    :I239 :temPai :I240 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I240
+    :I240 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Uzzi" .
+    :I240 :temPai :I241 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I241
+    :I241 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bukki" .
+    :I241 :temPai :I242 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I242
+    :I242 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abishuah" .
+    :I242 :temPai :I243 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I243
+    :I243 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Phineas" .
+    :I243 :temPai :I244 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I244
+    :I244 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eleazer" .
+    :I244 :temPai :I245 .
+    :I244 :temMae :I263 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I245
+    :I245 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aaron" .
+    :I245 :temPai :I246 .
+    :I245 :temMae :I255 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I246
+    :I246 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amram" .
+    :I246 :temPai :I247 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I247
+    :I247 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kohath" .
+    :I247 :temPai :I248 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I248
+    :I248 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Levi" .
+    :I248 :temPai :I10 .
+    :I248 :temMae :I9 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I249
+    :I249 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joiadah" .
+    :I249 :temPai :I250 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I250
+    :I250 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eliashib" .
+    :I250 :temPai :I251 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I251
+    :I251 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joachim" .
+    :I251 :temPai :I252 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I252
+    :I252 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joshuah" .
+    :I252 :temPai :I253 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I253
+    :I253 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Josedech" .
+    :I253 :temPai :I254 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I254
+    :I254 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Seriah" .
+    :I254 :temPai :I284 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I255
+    :I255 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jochebed" .
+    :I255 :temPai :I248 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I256
+    :I256 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Merari" .
+    :I256 :temPai :I248 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I257
+    :I257 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Libni" .
+    :I257 :temPai :I280 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I258
+    :I258 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shimi" .
+    :I258 :temPai :I280 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I259
+    :I259 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mahali" .
+    :I259 :temPai :I256 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I260
+    :I260 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mushi" .
+    :I260 :temPai :I256 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I261
+    :I261 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Moses" .
+    :I261 :temPai :I246 .
+    :I261 :temMae :I255 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I262
+    :I262 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mirham" .
+    :I262 :temPai :I246 .
+    :I262 :temMae :I255 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I263
+    :I263 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elisheba" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I264
+    :I264 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jehudisah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I265
+    :I265 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jether" .
+    :I265 :temPai :I233 .
+    :I265 :temMae :I232 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I266
+    :I266 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mered" .
+    :I266 :temPai :I233 .
+    :I266 :temMae :I232 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I267
+    :I267 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ephar" .
+    :I267 :temPai :I233 .
+    :I267 :temMae :I232 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I268
+    :I268 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jalon" .
+    :I268 :temPai :I233 .
+    :I268 :temMae :I232 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I269
+    :I269 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mariam" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I270
+    :I270 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shammai" .
+    :I270 :temPai :I233 .
+    :I270 :temMae :I264 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I271
+    :I271 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ishbah" .
+    :I271 :temPai :I233 .
+    :I271 :temMae :I264 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I272
+    :I272 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jerad" .
+    :I272 :temPai :I233 .
+    :I272 :temMae :I264 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I273
+    :I273 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Heber" .
+    :I273 :temPai :I233 .
+    :I273 :temMae :I264 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I274
+    :I274 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jekuthiel" .
+    :I274 :temPai :I233 .
+    :I274 :temMae :I264 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I275
+    :I275 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eshteemca" .
+    :I275 :temPai :I271 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I276
+    :I276 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gedor" .
+    :I276 :temPai :I272 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I277
+    :I277 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Socho" .
+    :I277 :temPai :I273 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I278
+    :I278 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zanoah" .
+    :I278 :temPai :I274 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I279
+    :I279 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Reuben" .
+    :I279 :temPai :I10 .
+    :I279 :temMae :I9 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I280
+    :I280 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gershon" .
+    :I280 :temPai :I248 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I281
+    :I281 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Libnah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I282
+    :I282 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shallum" .
+    :I282 :temPai :I222 .
+    :I282 :temMae :I223 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I283
+    :I283 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mulek" .
+    :I283 :temPai :I221 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I284
+    :I284 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Azaniah" .
+    :I284 :temPai :I226 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I285
+    :I285 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Johanan" .
+    :I285 :temPai :I222 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I286
+    :I286 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jehoiakim" .
+    :I286 :temPai :I222 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I287
+    :I287 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jeconiah" .
+    :I287 :temPai :I286 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I288
+    :I288 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zedekiah" .
+    :I288 :temPai :I286 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I289
+    :I289 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Assir" .
+    :I289 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I290
+    :I290 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Malchiram" .
+    :I290 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I291
+    :I291 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Pedaiah" .
+    :I291 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I292
+    :I292 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shenazar" .
+    :I292 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I293
+    :I293 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jacamiah" .
+    :I293 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I294
+    :I294 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hoshama" .
+    :I294 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I295
+    :I295 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nedabiah" .
+    :I295 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I296
+    :I296 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zerubbabel" .
+    :I296 :temPai :I291 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I297
+    :I297 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shimei" .
+    :I297 :temPai :I291 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I298
+    :I298 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Meshullam" .
+    :I298 :temPai :I296 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I299
+    :I299 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hananiah" .
+    :I299 :temPai :I296 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I300
+    :I300 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Saeloith" .
+    :I300 :temPai :I296 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I301
+    :I301 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Rephaiah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I302
+    :I302 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Miriam" .
+    :I302 :temPai :I233 .
+    :I302 :temMae :I264 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I303
+    :I303 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Salathiel" .
+    :I303 :temPai :I287 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I304
+    :I304 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gershom" .
+    :I304 :temPai :I261 .
+    :I304 :temMae :I215 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I305
+    :I305 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hanoch" .
+    :I305 :temPai :I279 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I306
+    :I306 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Phallu" .
+    :I306 :temPai :I279 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I307
+    :I307 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hezron" .
+    :I307 :temPai :I279 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I308
+    :I308 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Carmi" .
+    :I308 :temPai :I279 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I309
+    :I309 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ohad" .
+    :I309 :temPai :I316 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I310
+    :I310 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jachin" .
+    :I310 :temPai :I316 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I311
+    :I311 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zohar" .
+    :I311 :temPai :I316 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I312
+    :I312 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shaul" .
+    :I312 :temPai :I316 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I313
+    :I313 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jemeul" .
+    :I313 :temPai :I316 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I314
+    :I314 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jamin" .
+    :I314 :temPai :I316 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I315
+    :I315 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shimea" .
+    :I315 :temPai :I364 .
+    :I315 :temMae :I320 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I316
+    :I316 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Simeon" .
+    :I316 :temPai :I10 .
+    :I316 :temMae :I9 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I317
+    :I317 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jehoram (Joram)" .
+    :I317 :temPai :I367 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I318
+    :I318 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ahaziah" .
+    :I318 :temPai :I317 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I319
+    :I319 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Athaliah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I320
+    :I320 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bathsheba" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I321
+    :I321 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Garcia II" .
+    :I321 :temPai :I325 .
+    :I321 :temMae :I326 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I322
+    :I322 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Chimene (Ximena)" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I323
+    :I323 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sancho III" .
+    :I323 :temPai :I321 .
+    :I323 :temMae :I322 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I324
+    :I324 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Munia (Ninia)" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I325
+    :I325 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sancho II" .
+    :I325 :temPai :I327 .
+    :I325 :temMae :I328 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I326
+    :I326 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Urraca" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I327
+    :I327 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sancho I" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I328
+    :I328 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Theuda (Toda)" .
+    :I328 :temPai :I373 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I329
+    :I329 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ram" .
+    :I329 :temPai :I342 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I330
+    :I330 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amminadab" .
+    :I330 :temPai :I329 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I331
+    :I331 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Morianton" .
+    :I331 :temPai :I339 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I332
+    :I332 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Rahab (Rachab)" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I333
+    :I333 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Salmon" .
+    :I333 :temPai :I374 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I334
+    :I334 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shelah" .
+    :I334 :temPai :I376 .
+    :I334 :temMae :I360 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I335
+    :I335 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ruth of Moab" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I336
+    :I336 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Onan" .
+    :I336 :temPai :I376 .
+    :I336 :temMae :I360 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I337
+    :I337 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Boas" .
+    :I337 :temPai :I333 .
+    :I337 :temMae :I332 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I338
+    :I338 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Obed" .
+    :I338 :temPai :I337 .
+    :I338 :temMae :I335 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I339
+    :I339 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Riplakish" .
+    :I339 :temPai :I420 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I340
+    :I340 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jesse" .
+    :I340 :temPai :I338 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I341
+    :I341 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Pharez" .
+    :I341 :temPai :I376 .
+    :I341 :temMae :I353 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I342
+    :I342 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hezron" .
+    :I342 :temPai :I341 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I343
+    :I343 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Vingener" .
+    :I343 :temPai :I344 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I344
+    :I344 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tror (Thor)" .
+    :I344 :temPai :I355 .
+    :I344 :temMae :I345 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I345
+    :I345 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Daufhter of Priam" .
+    :I345 :temPai :I346 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I346
+    :I346 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Priam" .
+    :I346 :temPai :I347 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I347
+    :I347 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lamoedon" .
+    :I347 :temPai :I348 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I348
+    :I348 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ilus" .
+    :I348 :temPai :I349 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I349
+    :I349 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tros King of" .
+    :I349 :temPai :I350 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I350
+    :I350 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Erichthonius" .
+    :I350 :temPai :I351 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I351
+    :I351 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Darda" .
+    :I351 :temPai :I352 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I352
+    :I352 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zarah" .
+    :I352 :temPai :I376 .
+    :I352 :temMae :I353 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I353
+    :I353 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tamar" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I354
+    :I354 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hamul" .
+    :I354 :temPai :I341 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I355
+    :I355 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Memnon" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I356
+    :I356 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Silvius" .
+    :I356 :temPai :I357 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I357
+    :I357 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aeneas" .
+    :I357 :temPai :I378 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I358
+    :I358 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Capps" .
+    :I358 :temPai :I359 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I359
+    :I359 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Assaracus" .
+    :I359 :temPai :I349 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I360
+    :I360 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shuah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I361
+    :I361 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Rehoboam (Roboam)" .
+    :I361 :temPai :I372 .
+    :I361 :temMae :I368 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I362
+    :I362 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nathan" .
+    :I362 :temPai :I364 .
+    :I362 :temMae :I320 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I363
+    :I363 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abia" .
+    :I363 :temPai :I361 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I364
+    :I364 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "David King of" .
+    :I364 :temPai :I340 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I365
+    :I365 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Asa" .
+    :I365 :temPai :I363 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I366
+    :I366 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shabod" .
+    :I366 :temPai :I364 .
+    :I366 :temMae :I320 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I367
+    :I367 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Josaphat" .
+    :I367 :temPai :I365 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I368
+    :I368 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nabah Princess of" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I369
+    :I369 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dinah" .
+    :I369 :temPai :I10 .
+    :I369 :temMae :I9 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I370
+    :I370 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joash" .
+    :I370 :temPai :I318 .
+    :I370 :temMae :I319 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I371
+    :I371 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amaziah" .
+    :I371 :temPai :I370 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I372
+    :I372 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Solomon" .
+    :I372 :temPai :I364 .
+    :I372 :temMae :I320 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I373
+    :I373 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Azuarius" .
+    :I373 :temPai :I359 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I374
+    :I374 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nashon (Naasson)" .
+    :I374 :temPai :I330 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I375
+    :I375 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Er" .
+    :I375 :temPai :I376 .
+    :I375 :temMae :I360 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I376
+    :I376 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Judah (Judas)" .
+    :I376 :temPai :I10 .
+    :I376 :temMae :I9 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I377
+    :I377 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Brutus (Came To Britain)" .
+    :I377 :temPai :I356 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I378
+    :I378 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Anchises" .
+    :I378 :temPai :I358 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I379
+    :I379 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tola" .
+    :I379 :temPai :I383 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I380
+    :I380 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shimron" .
+    :I380 :temPai :I383 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I381
+    :I381 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Phuvah" .
+    :I381 :temPai :I383 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I382
+    :I382 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Job" .
+    :I382 :temPai :I383 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I383
+    :I383 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Issachar" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I384
+    :I384 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jahleel" .
+    :I384 :temPai :I387 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I385
+    :I385 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sered" .
+    :I385 :temPai :I387 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I386
+    :I386 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elon" .
+    :I386 :temPai :I387 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I387
+    :I387 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zebulun" .
+    :I387 :temPai :I10 .
+    :I387 :temMae :I9 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I388
+    :I388 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Uzziah (Azariah)" .
+    :I388 :temPai :I371 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I389
+    :I389 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jotham" .
+    :I389 :temPai :I388 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I390
+    :I390 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ahaz" .
+    :I390 :temPai :I389 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I391
+    :I391 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hezekiah" .
+    :I391 :temPai :I390 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I392
+    :I392 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Manasseh" .
+    :I392 :temPai :I391 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I393
+    :I393 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Milcah" .
+    :I393 :temPai :I396 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I394
+    :I394 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hoglah" .
+    :I394 :temPai :I396 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I395
+    :I395 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Noah" .
+    :I395 :temPai :I396 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I396
+    :I396 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zelophehad" .
+    :I396 :temPai :I397 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I397
+    :I397 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hepher" .
+    :I397 :temPai :I399 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I398
+    :I398 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bashan" .
+    :I398 :temPai :I400 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I399
+    :I399 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gilead" .
+    :I399 :temPai :I400 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I400
+    :I400 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "MacHir" .
+    :I400 :temPai :I408 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I401
+    :I401 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shemida" .
+    :I401 :temPai :I408 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I402
+    :I402 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hepher" .
+    :I402 :temPai :I408 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I403
+    :I403 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shechem" .
+    :I403 :temPai :I408 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I404
+    :I404 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Asriel" .
+    :I404 :temPai :I408 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I405
+    :I405 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Helek" .
+    :I405 :temPai :I408 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I406
+    :I406 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abiezer" .
+    :I406 :temPai :I408 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I407
+    :I407 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ephraim" .
+    :I407 :temPai :I410 .
+    :I407 :temMae :I409 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I408
+    :I408 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Manasseh" .
+    :I408 :temPai :I410 .
+    :I408 :temMae :I409 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I409
+    :I409 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Asenath" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I410
+    :I410 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joseph" .
+    :I410 :temPai :I10 .
+    :I410 :temMae :I142 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I411
+    :I411 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shillem" .
+    :I411 :temPai :I415 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I412
+    :I412 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jezer" .
+    :I412 :temPai :I415 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I413
+    :I413 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Guni" .
+    :I413 :temPai :I415 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I414
+    :I414 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jahzeel" .
+    :I414 :temPai :I415 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I415
+    :I415 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Naphtali" .
+    :I415 :temPai :I10 .
+    :I415 :temMae :I143 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I416
+    :I416 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Hushim" .
+    :I416 :temPai :I417 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I417
+    :I417 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Dan" .
+    :I417 :temPai :I10 .
+    :I417 :temMae :I143 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I418
+    :I418 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shule" .
+    :I418 :temPai :I490 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I419
+    :I419 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Heth" .
+    :I419 :temPai :I505 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I420
+    :I420 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shez" .
+    :I420 :temPai :I419 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I421
+    :I421 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Malchiel" .
+    :I421 :temPai :I509 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I422
+    :I422 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Heber" .
+    :I422 :temPai :I509 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I423
+    :I423 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ammon" .
+    :I423 :temPai :I392 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I424
+    :I424 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joseph" .
+    :I424 :temPai :I425 .
+    :I424 :temMae :I426 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I425
+    :I425 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mattathias" .
+    :I425 :temPai :I521 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I426
+    :I426 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Daughter of Simon The Just" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I427
+    :I427 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Semei" .
+    :I427 :temPai :I428 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I428
+    :I428 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joseph" .
+    :I428 :temPai :I429 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I429
+    :I429 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Juda" .
+    :I429 :temPai :I430 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I430
+    :I430 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joanna" .
+    :I430 :temPai :I431 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I431
+    :I431 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Rhesa" .
+    :I431 :temPai :I432 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I432
+    :I432 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zorobabel" .
+    :I432 :temPai :I433 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I433
+    :I433 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Salathiel" .
+    :I433 :temPai :I434 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I434
+    :I434 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Neri" .
+    :I434 :temPai :I435 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I435
+    :I435 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Melchi" .
+    :I435 :temPai :I436 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I436
+    :I436 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Addi" .
+    :I436 :temPai :I437 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I437
+    :I437 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Cosam" .
+    :I437 :temPai :I438 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I438
+    :I438 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elmodam" .
+    :I438 :temPai :I439 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I439
+    :I439 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Er" .
+    :I439 :temPai :I440 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I440
+    :I440 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jose" .
+    :I440 :temPai :I441 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I441
+    :I441 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eliezer" .
+    :I441 :temPai :I442 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I442
+    :I442 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jorim" .
+    :I442 :temPai :I548 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I443
+    :I443 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jesus" .
+    :I443 :temPai :I543 .
+    :I443 :temMae :I547 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I444
+    :I444 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Levi" .
+    :I444 :temPai :I445 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I445
+    :I445 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Simeon" .
+    :I445 :temPai :I446 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I446
+    :I446 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Juda" .
+    :I446 :temPai :I447 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I447
+    :I447 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joseph" .
+    :I447 :temPai :I522 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I448
+    :I448 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eliakim" .
+    :I448 :temPai :I449 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I449
+    :I449 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Melea" .
+    :I449 :temPai :I450 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I450
+    :I450 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Menan" .
+    :I450 :temPai :I451 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I451
+    :I451 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mattatha" .
+    :I451 :temPai :I362 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I452
+    :I452 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amalech" .
+    :I452 :temPai :I453 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I453
+    :I453 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Beli (Heli) King" .
+    :I453 :temPai :I464 .
+    :I453 :temMae :I454 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I454
+    :I454 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Anna" .
+    :I454 :temPai :I544 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I455
+    :I455 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Matthat" .
+    :I455 :temPai :I542 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I456
+    :I456 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Melchi" .
+    :I456 :temPai :I457 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I457
+    :I457 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Janna" .
+    :I457 :temPai :I424 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I458
+    :I458 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Bran" .
+    :I458 :temPai :I459 .
+    :I458 :temMae :I460 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I459
+    :I459 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Penardin" .
+    :I459 :temPai :I464 .
+    :I459 :temMae :I454 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I460
+    :I460 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Llyr" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I461
+    :I461 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Azor" .
+    :I461 :temPai :I546 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I462
+    :I462 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mahlah" .
+    :I462 :temPai :I396 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I463
+    :I463 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aodh Glas" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I464
+    :I464 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Manogan" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I465
+    :I465 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lud King of" .
+    :I465 :temPai :I453 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I466
+    :I466 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sadoc" .
+    :I466 :temPai :I461 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I467
+    :I467 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eleazar" .
+    :I467 :temPai :I469 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I468
+    :I468 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Achim" .
+    :I468 :temPai :I466 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I469
+    :I469 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eliud" .
+    :I469 :temPai :I468 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I470
+    :I470 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Heli" .
+    :I470 :temPai :I455 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I471
+    :I471 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jacob" .
+    :I471 :temPai :I472 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I472
+    :I472 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Matthan" .
+    :I472 :temPai :I467 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I473
+    :I473 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Abiud" .
+    :I473 :temPai :I494 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I474
+    :I474 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Salathiel" .
+    :I474 :temPai :I475 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I475
+    :I475 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jechonias" .
+    :I475 :temPai :I476 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I476
+    :I476 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Josias" .
+    :I476 :temPai :I477 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I477
+    :I477 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amon" .
+    :I477 :temPai :I478 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I478
+    :I478 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Manasses" .
+    :I478 :temPai :I479 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I479
+    :I479 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ezekias" .
+    :I479 :temPai :I480 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I480
+    :I480 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Achaz" .
+    :I480 :temPai :I481 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I481
+    :I481 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joatham" .
+    :I481 :temPai :I482 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I482
+    :I482 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ozias" .
+    :I482 :temPai :I317 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I483
+    :I483 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mattathias" .
+    :I483 :temPai :I427 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I484
+    :I484 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Maath" .
+    :I484 :temPai :I483 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I485
+    :I485 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nagga" .
+    :I485 :temPai :I484 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I486
+    :I486 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Esli" .
+    :I486 :temPai :I485 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I487
+    :I487 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Omer" .
+    :I487 :temPai :I418 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I488
+    :I488 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Benjaman" .
+    :I488 :temPai :I10 .
+    :I488 :temMae :I142 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I489
+    :I489 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Emer" .
+    :I489 :temPai :I487 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I490
+    :I490 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kib" .
+    :I490 :temPai :I492 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I491
+    :I491 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elon" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I492
+    :I492 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Orihah" .
+    :I492 :temPai :I571 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I493
+    :I493 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ezbon" .
+    :I493 :temPai :I500 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I494
+    :I494 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zorobabel" .
+    :I494 :temPai :I474 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I495
+    :I495 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shuni" .
+    :I495 :temPai :I500 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I496
+    :I496 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Arodi" .
+    :I496 :temPai :I500 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I497
+    :I497 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Haggi" .
+    :I497 :temPai :I500 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I498
+    :I498 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eri" .
+    :I498 :temPai :I500 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I499
+    :I499 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ziphion" .
+    :I499 :temPai :I500 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I500
+    :I500 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gad" .
+    :I500 :temPai :I10 .
+    :I500 :temMae :I144 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I501
+    :I501 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sigurd I" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I502
+    :I502 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Tirzah" .
+    :I502 :temPai :I396 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I503
+    :I503 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Elizabeth" .
+    :I503 :temPai :I472 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I504
+    :I504 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Coriantum" .
+    :I504 :temPai :I489 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I505
+    :I505 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Com" .
+    :I505 :temPai :I504 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I506
+    :I506 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Isui" .
+    :I506 :temPai :I539 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I507
+    :I507 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ishuah" .
+    :I507 :temPai :I539 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I508
+    :I508 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Enos" .
+    :I508 :temPai :I528 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I509
+    :I509 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Beriah" .
+    :I509 :temPai :I539 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I510
+    :I510 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ashbel" .
+    :I510 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I511
+    :I511 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jarom" .
+    :I511 :temPai :I508 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I512
+    :I512 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Omni" .
+    :I512 :temPai :I511 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I513
+    :I513 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Chemish" .
+    :I513 :temPai :I512 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I514
+    :I514 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amaron" .
+    :I514 :temPai :I512 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I515
+    :I515 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mohonria Moriancuma" .
+    :I515 :temPai :I568 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I516
+    :I516 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Becher" .
+    :I516 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I517
+    :I517 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ard" .
+    :I517 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I518
+    :I518 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Naaman" .
+    :I518 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I519
+    :I519 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Huppim" .
+    :I519 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I520
+    :I520 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Naum" .
+    :I520 :temPai :I486 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I521
+    :I521 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amos" .
+    :I521 :temPai :I520 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I522
+    :I522 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jonan" .
+    :I522 :temPai :I448 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I523
+    :I523 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Muppim" .
+    :I523 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I524
+    :I524 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eli" .
+    :I524 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I525
+    :I525 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gera" .
+    :I525 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I526
+    :I526 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lehi" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I527
+    :I527 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Iddo" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I528
+    :I528 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jacob" .
+    :I528 :temPai :I526 .
+    :I528 :temMae :I534 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I529
+    :I529 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joeph" .
+    :I529 :temPai :I526 .
+    :I529 :temMae :I534 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I530
+    :I530 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nephi" .
+    :I530 :temPai :I526 .
+    :I530 :temMae :I534 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I531
+    :I531 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sam" .
+    :I531 :temPai :I526 .
+    :I531 :temMae :I534 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I532
+    :I532 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lemul" .
+    :I532 :temPai :I526 .
+    :I532 :temMae :I534 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I533
+    :I533 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Laman" .
+    :I533 :temPai :I526 .
+    :I533 :temMae :I534 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I534
+    :I534 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sariah" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I535
+    :I535 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Belah" .
+    :I535 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I536
+    :I536 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Rosh" .
+    :I536 :temPai :I488 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I537
+    :I537 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Sarah" .
+    :I537 :temPai :I539 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I538
+    :I538 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jimnah" .
+    :I538 :temPai :I539 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I539
+    :I539 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Asher" .
+    :I539 :temPai :I10 .
+    :I539 :temMae :I144 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I540
+    :I540 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Zachariah" .
+    :I540 :temPai :I527 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I541
+    :I541 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "John" .
+    :I541 :temPai :I540 .
+    :I541 :temMae :I503 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I542
+    :I542 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Levi" .
+    :I542 :temPai :I456 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I543
+    :I543 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joseph" .
+    :I543 :temPai :I470 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I544
+    :I544 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Joseph" .
+    :I544 :temPai :I455 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I545
+    :I545 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Areli" .
+    :I545 :temPai :I500 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I546
+    :I546 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Eliakim" .
+    :I546 :temPai :I473 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I547
+    :I547 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mary" .
+    :I547 :temPai :I471 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I548
+    :I548 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Matthat" .
+    :I548 :temPai :I444 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I549
+    :I549 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kim" .
+    :I549 :temPai :I331 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I550
+    :I550 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Levi" .
+    :I550 :temPai :I549 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I551
+    :I551 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Corom" .
+    :I551 :temPai :I550 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I552
+    :I552 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Kish" .
+    :I552 :temPai :I551 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I553
+    :I553 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Lib" .
+    :I553 :temPai :I552 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I554
+    :I554 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Heth" .
+    :I554 :temPai :I553 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I555
+    :I555 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Aaron" .
+    :I555 :temPai :I554 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I556
+    :I556 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Amnigaddah" .
+    :I556 :temPai :I555 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I557
+    :I557 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Coriantam" .
+    :I557 :temPai :I556 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I558
+    :I558 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Shiblon" .
+    :I558 :temPai :I565 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I559
+    :I559 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Seth" .
+    :I559 :temPai :I558 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I560
+    :I560 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Anah" .
+    :I560 :temPai :I559 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I561
+    :I561 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ethem" .
+    :I561 :temPai :I560 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I562
+    :I562 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Moron" .
+    :I562 :temPai :I561 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I563
+    :I563 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Coriantor" .
+    :I563 :temPai :I562 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I564
+    :I564 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Ether" .
+    :I564 :temPai :I563 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I565
+    :I565 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Com" .
+    :I565 :temPai :I557 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I566
+    :I566 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Pagag" .
+    :I566 :temPai :I515 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I567
+    :I567 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jacon" .
+    :I567 :temPai :I571 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I568
+    :I568 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Father of Jared" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I569
+    :I569 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Corianumr" .
+    :I569 :temPai :I487 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I570
+    :I570 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "A Daughter of Jared" .
+    :I570 :temPai :I575 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I571
+    :I571 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jared" .
+    :I571 :temPai :I568 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I572
+    :I572 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Gilgah" .
+    :I572 :temPai :I571 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I573
+    :I573 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Mahah" .
+    :I573 :temPai :I571 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I574
+    :I574 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "A Son of Alish" .
+    :I574 :temPai :I578 .
+    :I574 :temMae :I570 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I575
+    :I575 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Jared" .
+    :I575 :temPai :I487 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I576
+    :I576 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Esrom" .
+    :I576 :temPai :I487 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I577
+    :I577 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nimrah" .
+    :I577 :temPai :I578 .
+    :I577 :temMae :I570 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I578
+    :I578 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Akish" .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I579
+    :I579 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Corihor" .
+    :I579 :temPai :I490 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I580
+    :I580 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Noah" .
+    :I580 :temPai :I579 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I581
+    :I581 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Cohor" .
+    :I581 :temPai :I579 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I582
+    :I582 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Cohor" .
+    :I582 :temPai :I580 .
+
+###  http://rpcw.di.uminho.pt/2024/familia#I583
+    :I583 rdf:type owl:NamedIndividual ,
+                 :Pessoa ;
+           :nome "Nimrod" .
+    :I583 :temPai :I582 .
